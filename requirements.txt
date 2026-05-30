@@ -1,0 +1,21 @@
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+sqlalchemy[asyncio]>=2.0.0
+aioodbc>=0.5.0
+pyodbc>=5.0.0
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+# bcrypt 4.1+ raises on >72-byte secrets; passlib's init hits that. Pin for Windows + passlib.
+bcrypt>=4.0.1,<4.1.0
+boto3>=1.34.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+email-validator>=2.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+Pillow>=10.0.0
+pypdf>=4.0.0
+httpx>=0.26.0
+python-multipart>=0.0.9
+facenet-pytorch>=2.5.0
